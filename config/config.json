@@ -1,6 +1,6 @@
 {
     "server": {
-        "accessLog": "/var/log/nginx/access.log",
+        "accessLog": "/tmp/access.log",
         "workers": 10,
         "maxSockets": 100,
         "deadBackendTTL": 30,
@@ -8,12 +8,6 @@
         "retryOnError": 3,
         "deadBackendOn500": true,
         "httpKeepAlive": false
-    },
-    "https": {
-        "port": 443,
-        "bind": "127.0.0.1",
-        "key": "/etc/ssl/ssl.key",
-        "cert": "/etc/ssl/ssl.crt"
     },
     "http": {
         "port": 80,
